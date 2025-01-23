@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-     <div class="mainbox">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="mainbox">
+            <div class="buttonbody">
+                <div class="circle">
+                    <div class="triangle"></div>
+                </div>
+            </div>
+        </div>
 
-        
-     </div>
-</body>
+        <script>
+            const circle = document.querySelector('.circle');
+            const triangle = document.querySelector('.triangle');
+
+            circle.addEventListener('click', function () {
+                const circleElements = circle.children;
+
+                if (circleElements.length > 0) {
+                    let currentChild = circleElements[0];
+
+                    if (currentChild.classList.contains('triangle')) {
+                        circle.style.background = '#f43f5e';
+                        circle.removeChild(currentChild);
+                        circle.style.marginLeft = '60px';
+                        const square = document.createElement('div');
+                        square.className = 'square';
+                        circle.appendChild(square);
+                    } else if (currentChild.classList.contains('square')) {
+                        circle.style.background = '#5e5e5e';
+                        circle.removeChild(currentChild);
+                        circle.style.marginLeft = '10px';
+                        circle.appendChild(triangle);
+                    }
+                }
+            });
+        </script>
+    </body>
 </html>
