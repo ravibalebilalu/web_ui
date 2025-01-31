@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #271717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: relative;
+}
+ 
+
+.container {
+    display: inline-block;
+    position: relative;
+  left:-30px;
+    color:#FFFFFF;
+    font-size:20px;
+  letter-spacing: -7px;
+    font-family: 'Courier New', Courier, monospace;
+  font-weight:500;
+    transition: transform 0.3s ease;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;
+    color:#FFFFFF;
+   
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: transform 0.3s ease;
+}
+.dash{
+    height: 2px;
+    width: 160px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 225px;
+  left:125px;
+}
+ 
+#toggle {
+    display: none;
+}
+
+ 
+#toggle:checked ~ .container .letter:nth-child(1) { transform: translateY(-30px); transition-delay: 0s; }
+#toggle:checked ~ .container .letter:nth-child(2) { transform: translateY(-30px); transition-delay: 0.1s; }
+#toggle:checked ~ .container .letter:nth-child(3) { transform: translateY(-30px); transition-delay: 0.2s; }
+#toggle:checked ~ .container .letter:nth-child(4) { transform: translateY(-30px); transition-delay: 0.3s; }
+#toggle:checked ~ .container .letter:nth-child(5) { transform: translateY(-30px); transition-delay: 0.4s; }
+#toggle:checked ~ .container .letter:nth-child(6) { transform: translateY(-30px); transition-delay: 0.5s; }
+#toggle:checked ~ .container .letter:nth-child(7) { transform: translateY(-30px); transition-delay: 0.6s; }
+#toggle:checked ~ .container .letter:nth-child(8) { transform: translateY(-30px); transition-delay: 0.7s; }
+#toggle:checked ~ .container .letter{
+    color:#ADD8E6 ;
+}
+ 
+#toggle:not(:checked) ~ .container .letter:nth-child(1) { transform: translateY(0); transition-delay: 0s; }
+#toggle:not(:checked) ~ .container .letter:nth-child(2) { transform: translateY(0); transition-delay: 0.1s; }
+#toggle:not(:checked) ~ .container .letter:nth-child(3) { transform: translateY(0); transition-delay: 0.2s; }
+#toggle:not(:checked) ~ .container .letter:nth-child(4) { transform: translateY(0); transition-delay: 0.3s; }
+#toggle:not(:checked) ~ .container .letter:nth-child(5) { transform: translateY(0); transition-delay: 0.4s; }
+#toggle:not(:checked) ~ .container .letter:nth-child(6) { transform: translateY(0); transition-delay: 0.5s; }
+#toggle:not(:checked) ~ .container .letter:nth-child(7) { transform: translateY(0); transition-delay: 0.6s; }
+#toggle:not(:checked) ~ .container .letter:nth-child(8) { transform: translateY(0); transition-delay: 0.7s; }
