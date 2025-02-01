@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #342929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.magicbox{
+    height: 50px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 5px 10px  #1e90ff;
+    border-radius: 7px;
+}
+.magicbox:hover{
+    box-shadow: 0px 5px 10px  #21dc62; 
+}
+.hoverme{
+    height: 50px;
+    width: 140px;
+    background-color: #1e90ff;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+     position: absolute; 
+     z-index: 100;
+}
+.hoverme p{
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+  font-size: 17px;
+}
+.smiley{
+    letter-spacing: -5px;
+}
+
+.thanks{
+    height: 50px;
+    width: 140px;
+    background-color: #21dc62;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+     
+    z-index: 99;
+}
+
+.thanks p{
+    color: #FFFFFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+  font-size: 17px;
+}
+.hoverme:hover{
+      
+     
+       display: none;
+}
+ 
