@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#000000;
+   
+    
+     
+}
+
+.mainbox{
+    height: 350px;
+    width: 400px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.checkout{
+display: flex;
+justify-content: start;
+align-items: center;
+}
+.checkout p{
+    font-size: 10px;
+  padding:15px 15px
+}
+.shipping{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+}
+.shipping p{
+    font-size: 15px;
+}
+
+.shipping .shipping-address{
+    width:200px;
+    font-size: 11px;
+}
+
+.paymentMethod{
+padding: 10px 15px;
+}
+
+.pm{
+    font-size: 15px;
+}
+
+.visa{
+    font-size: 10px;
+    padding-top:10px;
+}
+.cardnumber{
+    font-size: 10px;
+}
+.payment{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    padding: 15px 15px;
+    font-size: 10px;
+}
+.amount li{
+text-align: end;
+}
+.pp{
+    font-size:15px ;
+    padding: 0px 15px;
+    padding-top: 10px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    background-color: #10565280;
+}
+.two{
+    font-size: 22px;
+    padding: 15px;
+}
+.checkoutbut{
+     
+    background-color: #10565280;
+ font-size: 14px;
+ height: 40px;
+ width: 150px;
+ text-align: center;
+ margin-top: 16px;
+ padding-top: 12px;
+ padding-right: 10px;
+ border-radius: 8px;
+ margin-right: 10px;
+  margin-bottom:19px;
+}
+
+
+.hr2,.hr3{
+    margin-left: 10px;
+}
