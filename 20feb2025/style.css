@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #022416;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #212121 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box{
+    height: 50px;
+    width: 200px;
+    background-color:#6225e6 ;
+    transform: skew(-25deg);
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 5px #000000;
+}
+h1{
+    font-size: 30px;
+    color: #FFFFFF;
+    transform: skew(25deg);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.arrow{
+    display: flex;
+       
+}
+.arr{
+    height: 15px;
+    width: 20px;
+    border-color:#FFFFFF;
+    border-style: solid;
+    border-width: 4px 5px 0px 0px;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 18px;
+    }
+h1{
+    font-weight: 300;
+     font-size: 25px;
+     
+}
+.arr ,.box{
+    transition:  all 1s;
+}
+.box:hover .arr:nth-child(1) {
+      margin-left: 13px;
+      animation: yellowArr1 1s linear infinite;
+}
+
+@keyframes  yellowArr1{
+    30%{
+        border-color:#fbc638 ;
+    }
+}
+
+
+.box:hover .arr:nth-child(2) {
+    margin-left: 26px;
+    animation: yellowArr2 1s linear infinite;
+}
+@keyframes  yellowArr2{
+    60%{
+        border-color:#fbc638 ;
+    }
+}
+
+.box:hover .arr:nth-child(3) {
+    margin-left: 39px;
+    animation: yellowArr3 1s linear infinite;
+}
+
+@keyframes  yellowArr3{
+    90%{
+        border-color:#fbc638 ;
+    }
+}
+.box:hover {
+    width: 250px;
+    box-shadow: 10px 10px 0px #fbc638 ;
+}
