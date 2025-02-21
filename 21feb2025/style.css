@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #103348;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.rect{
+    height: 54px;
+    width: 154px;
+    background:radial-gradient(#FFFFFF,#FFFFFF);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.container{
+    height: 50px;
+    width: 150px;
+     overflow: hidden;
+      
+}
+.box ,.back{
+    height: 50px;
+    width: 150px;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin-top .3s;
+    
+}
+.box p ,.back p{
+    color: #e91e63;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 15px;
+     font-weight:100;
+}
+.box p,.back p,.line1,.line2,.line3,.line4{
+    transition: all .3s;
+}
+ .container:hover .box p{
+    margin-top: -100px;
+    
+ }
+
+
+ .container:hover .back p{
+    margin-top: -100px;
+ }
+
+
+ .line1{
+    height: 5px;
+    width: 0px;
+    background-color: #e91e63;
+    margin-left: 120px;
+ }
+ .line2{
+    height: 5px;
+    width: 10px;
+    background-color: #e91e63;
+    margin-left: -170px;
+ }
+
+ .line3{
+    height: 5px;
+    width: 5px;
+    background-color: #e91e63;
+      position: absolute;
+      left:0px;
+      bottom:-5px;
+      
+ }
+
+ .line4{
+    height: 5px;
+    width: 5px;
+    background-color: #e91e63;
+      position: absolute;
+      right:0px;
+      top:-4px;
+      
+ }
+ 
+ .rect:hover .line1{
+    width: 290px;
+    
+}
+
+.rect:hover .line2{
+    width: 350px;
+}
+
+.rect:hover .line3{
+    height: 70px;
+    
+}
+.rect:hover .line4{
+    height: 70px;
+    
+}
+
