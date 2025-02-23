@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #09222e ;
+    display: flex;
+     
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:#212121 ;
+}
+.box{
+    height: 200px;
+    width: 170px;
+    background-color:#FFFFFF ;
+    border-radius: 10px;
+    flex-direction: column;
+    gap:10px;
+}
+#cheese,#bread,#coffee{
+     display: none;
+}
+label{
+    color: #414856;
+    position: relative;
+}
+.minus{
+    position: relative;
+    color: #414856;
+}
+.vspan{
+    color: #4f29f0;
+}
+#bread:checked ~ .breadlabel .bspan{
+      text-decoration:line-through;
+        opacity: .5;
+}
+#bread:checked ~ .breadlabel .vspan{
+      opacity: 1;
+}
+
+#bread:checked ~ .breadlabel .minus{
+     
+    opacity: 0;
+  
+      
+}
+
+
+
+
+#cheese:checked ~ .cheeselabel .cspan{
+    text-decoration:line-through;
+      opacity: .5;
+}
+
+#cheese:checked ~ .cheeselabel .vspan{
+    opacity: 1;
+}
+
+#cheese:checked ~ .cheeselabel .minus{
+  opacity: 0;
+}
+
+#coffee:checked ~ .coffeelabel .cospan{
+    text-decoration:line-through;
+      opacity: .5;
+}
+
+
+#coffee:checked ~ .coffeelabel .vspan{
+    opacity: 1;
+}
+
+#coffee:checked ~ .coffeelabel .minus{
+  opacity: 0;
+}
+
+.breadlabel .vspan{
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+}
+
+ .cheeselabel .vspan{
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+}
+.coffeelabel .vspan{
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+}
+.minus{
+     font-size: 30px;
+     font-weight: light;
+    color:#4f29f0;
+}
+ .bspan,.cspan,.cospan{
+    margin-left: 10px;
+ }
