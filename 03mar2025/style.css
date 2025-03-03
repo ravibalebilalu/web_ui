@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #080b3d;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+}
+
+.container{
+    overflow: hidden;
+    height: 300px;
+    width: 200px;
+     
+     position: relative;
+}
+.box{
+    transform: rotate(45deg); 
+    position: absolute;
+}
+.b1{
+    height: 220px;
+    width:200px;
+    clip-path: polygon(100% 0, 100% 100%, 25% 100%);
+    background-color: #23a;
+    transform: rotate(180deg);
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    
+}
+.b2{
+    height: 400px;
+    width: 400px;
+    background-color: #f16;
+   
+}
+.b3{
+    height: 220px;
+    width: 200px;
+    clip-path: polygon(100% 0%, 100% 100%, 30% 100%);
+    background-color:#dd2;
+    transform: rotate(0deg);
+    bottom: 0px;
+    right: 0px;
+}
+
+.b1, .b3 {
+    z-index: 200;
+}
+
+ .b1,.b2,.b3{
+    transition: all .5s;
+ }
+ 
+ .b1:hover {
+    width: 470px;
+    height: 470px;
+}
+.b1:hover ~ .b3 {
+    height: 50px;
+    width: 50px;
+}
+
+ 
+.b2:hover ~ .b3 {
+    height: 50px;
+    width: 50px;
+}
+.container:has(.b2:hover) .b1 {
+    height: 50px;
+    width: 50px;
+    left: 0px;
+    top: 0px;
+      
+ }
+ 
+.b3:hover {
+    width: 480px;
+    height: 480px;
+}
+.container:has(.b3:hover) .b1 {
+   height: 50px;
+   width: 50px;
+   left: 0px;
+   top: 0px;
+     
+}
+
