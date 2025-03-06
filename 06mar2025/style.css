@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #030622;
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+}
+.card {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom: 2px solid #fdbd4a;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 30px;
+    position: relative;
+}
+.box1 h1 {
+    font-weight: bold;
+    font-size: 32px;
+}
+.box1 p {
+    font-size: 14px;
+}
+
+.box2 h1 {
+    background-color: #fdbd4a;
+    padding-right: 135px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+    z-index: 99;
+     
+}
+.box2 p:nth-child(1){
+    position: absolute;
+    font-size: 15px;
+    left:47px;
+    top: 110px;
+    z-index: 100;
+}
+
+.box2 p:nth-child(3){
+    position: absolute;
+    font-size: 15px;
+    left:185px;
+    top: 110px;
+    z-index: 100;
+     font-size: 12px;
+}
+
+ul{
+    list-style-position: inside;
+     list-style: none;
+}
+li{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.list-decorator{
+    position: absolute;
+    top: 215px;
+    left: 80px;
+    flex-direction: column;
+    gap: 3px;
+}
+.box{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+.right{
+    height: 5px;
+    width: 8px;
+     border-style: solid;
+     border-color: #000;
+     border-width: 3px 3px 0px 0px;
+     transform: rotate(130deg);
+     margin-right: 0px;
+     margin-top: -2px;
+
+}
+.box4{
+    background-color:#fdbd4a;
+    padding: 10px 15px;
+    border-radius: 5px;
+  font-size:17px;
+  margin-top:15px;
+  margin-left:20px;
+  transition: transform .5s;
+}
+.box4:hover{
+    transform: translate(0px,-2px);
+    
+}
