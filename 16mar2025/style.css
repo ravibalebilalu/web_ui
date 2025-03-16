@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:#033b32 ;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+}
+.container{
+    
+}
+.body{
+    border: 2px solid #FFF;
+    width: 100px;
+     
+}
+.head{
+    height: 15px;
+    width: 10px;
+   border-color: #FFF;
+   border-style: solid;
+   border-width: 3px 3px 3px 0px;
+}
+.box{
+    height: 35px;
+    width: 12px;
+    background-color: #FFF;
+     margin: 3px;
+      
+}
+.b1{
+    animation: b1 2s steps(1) infinite;
+}
+
+@keyframes b1 {
+    0%, 100% { opacity: 0; }
+    10% { opacity: 1; }
+}
+
+.b2{
+    animation: b2 2s steps(1) infinite;
+}
+
+@keyframes b2 {
+    0%, 100% { opacity: 0; }
+    20% { opacity: 1; }
+}
+
+.b3{
+    animation: b3 2s steps(1) infinite;
+}
+
+@keyframes b3 {
+    0%, 100% { opacity: 0; }
+    30% { opacity: 1; }
+}
+
+.b4{
+    animation: b4 2s steps(1) infinite;
+}
+
+@keyframes b4 {
+    0%, 100% { opacity: 0; }
+    40% { opacity: 1; }
+}
+
+.b5{
+    animation: b5 2s steps(1) infinite;
+}
+
+@keyframes b5 {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
