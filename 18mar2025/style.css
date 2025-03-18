@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #140524;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+}
+
+.container {
+    height: 35px;
+    width: 230px;
+    background-color: #FFF;
+    justify-content: start;
+    padding-left: 1px;
+    position: relative;
+}
+
+.progressbar {
+    height: 33px;
+    width: 0;
+    background-color: #DF3C3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: bar 10s linear infinite;
+}
+
+
+.progress-text{
+     text-align: center;
+     position: relative;
+     top: -10px;
+     left: -130px;
+     font-weight: 100;
+}
+
+.progress-text::after {
+    content: "0%";
+    position: absolute;
+    color: #DF3C3C;
+    font-weight: 100;
+    animation: progressText 10s linear infinite;
+    
+}
+@keyframes bar {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 228px;
+    }
+}
+
+@keyframes progressText {
+    0% {
+        content: "0%";
+    }
+    10% {
+        content: "10%";
+    }
+    20% {
+        content: "20%";
+    }
+    30% {
+        content: "30%";
+    }
+    40% {
+        content: "40%";
+    }
+    50% {
+        content: "50%";
+    }
+    60% {
+        content: "60%";
+         
+    }
+    70% {
+        content: "70%";
+        color: #FFF;
+    }
+    80% {
+        content: "80%";
+        color: #FFF;
+    }
+    90% {
+        content: "90%";
+        color: #FFF;
+    }
+    100% {
+        content: "100%";
+        color: #FFF;
+    }
+}
