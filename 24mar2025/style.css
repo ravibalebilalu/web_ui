@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #1c0e3e;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    flex-direction: column;
+}
+.container{
+    flex-direction:  column;
+    overflow: hidden;
+    position: relative;
+  
+  
+}
+.happy,.easter,.container{
+    width: 200px;
+    height: 80px;
+    border: 3px solid #FFF;
+}
+.happy{
+    
+     color: #FFF;
+     background-color: #222229;
+     
+     padding: 10px;
+     position: absolute;
+     top: 0px;
+}
+
+.easter{
+    color: #222229;
+    background-color: #f5deb3;
+
+    padding: 10px;
+    position: absolute;
+    height: 100px;
+}
+.happy,.easter,.container{
+    transition: all .5s ease-out;
+}
+.container:hover .happy{
+      top: 80px;
+     
+}
+
+.container:hover .easter{
+    
+   
+}
