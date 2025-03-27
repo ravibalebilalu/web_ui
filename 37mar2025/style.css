@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #0a2c36;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    position: relative;
+}
+
+.container{
+    flex-direction: column;
+    background-color: #FFF;
+    
+    gap: 20px;
+    padding: 35px 25px;
+    border-radius: 20px;
+}
+input{
+    background-color: #8B8E98;
+  
+    color: #000;
+    border-radius: 10px;
+    padding: 12px;
+  border:none;
+}
+#fullname,#cardnumber{
+    width: 350px;
+}
+
+.thierdline{
+    gap: 20px;
+}
+#expdate{
+    width: 65%;
+}
+#cvv{
+    width: 25%;
+}
+.check{
+    padding: 2px;
+    border-radius: 10px;
+    transition: outline 1s;
+}
+.checkout{
+    background-color: #e91e63;
+    border-radius: 10px;
+     border: none;
+    padding: 20px 145px;
+  font-size:12px;
+  color:#FFF;
+  font-weight:bold;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+.chfn,.cardnumber,.expiry{
+    font-size: 10px;
+    position: absolute;
+    
+}
+.chfn{top: 60px;
+    left: 30px;}
+
+    .cardnumber{
+        top: 128px;
+    left: 30px;
+    }
+    .expiry{
+        top: 190px;
+    left: 30px;
+    }
+
+    #fullname:focus{
+outline: 3px solid #e91e63;
+background-color: #FFF;
+    }
+    #cardnumber:focus{
+        outline: 3px solid #e91e63;
+        background-color: #FFF;
+    }
+
+    #expdate:focus{
+        outline: 3px solid #e91e63;
+        background-color: #FFF;
+    }
+
+    #cvv:focus{
+        outline: 3px solid #e91e63;
+        background-color: #FFF;
+    }
+
+    .check:hover{
+outline: 3px solid #000;
+transition: outline 1s;
+ 
+    }
