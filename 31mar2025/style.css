@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0d263d;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+}
+.container{
+    height: 370px;
+    width:280px;
+    background-color: #27272a;
+    border-radius: 25px;
+    flex-direction: column;
+     align-items: start;
+     justify-content: start;
+}
+.box1{
+    height: 160px;
+    width: 240px;
+    background-color: #6d28d9;
+    border-radius: 10px;
+    margin: 20px;
+}
+.box2{
+    color: #FFF;
+    margin-left: 20px;
+  font-weight:900;
+}
+.box3{
+    font-size: 15px;
+    color: #fff;
+    margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom:5px;
+}
+.box4{
+    gap: 5px;
+    margin-left: 20px;
+    color: #FFF;
+    position: relative;
+    
+}
+.b37,.b38,.b39,.b40,.b41{
+    background-color: #18181b;
+    padding: 3px;
+    font-size: 15px;
+    border: 1px solid #18181b;
+    transition: border 1s;
+}
+.box5{
+    gap: 30px;
+   margin-left: 20px;
+  margin-top:10px;
+}
+.box51{
+    font-size: 30px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.box52{
+    background-color: #6d28d9;
+    padding: 13px 40px;
+    border-radius: 10px;
+  color:#fff;
+  font-size:15px;
+}
+
+#toggle37,#toggle38,#toggle39,#toggle40,#toggle41,#toggle42{
+    display: none;
+}
+.b37 ,.b38 ,.b39 ,.b40 ,.b41 {
+    border-radius: 3px;
+    transition:  background-color 1s;
+  padding:10px;
+}
+.b37:hover,.b38:hover,.b39:hover,.b40:hover,.b41:hover{
+    border: 1px solid #FFF;
+}
+
+ #toggle37:checked ~ .b37{
+    background-color: #6d28d9;
+ }
+
+ #toggle38:checked ~ .b38{
+    background-color: #6d28d9;
+ }
+
+ #toggle39:checked ~ .b39{
+    background-color: #6d28d9;
+ }
+
+ #toggle40:checked ~ .b40{
+    background-color: #6d28d9;
+ }
+ #toggle41:checked ~ .b41{
+    background-color: #6d28d9;
+ }
+
+ .b42 {
+    position: absolute;
+    top: 52px;
+    left: 91px;
+    width: 146px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 10px;
+}
