@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #154a53;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    position: relative;
+}
+p{
+    color: #800080;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:17px;
+    font-weight:600;
+    border: 1px solid #800080;
+    padding: 12px 15px;
+    transition: color .5s;
+    cursor: pointer;
+}
+
+p:hover{
+    color: #FFF;
+    font-weight: 900;
+}
