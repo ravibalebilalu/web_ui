@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #19324e;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    position: relative;
+    gap: 10px;
+}
+
+.box{
+    height: 100px;
+    width: 80px;
+    background-color: #C7C7C7;
+    border-radius: 10px;
+    animation: boxanim 5s linear infinite;
+}
+
+@keyframes boxanim{
+    0%{
+        transform: rotateY(90deg);
+          transform-origin: 10% 10%;
+      }
+    
+    50%{
+        transform: translatex(-200px);
+    }
+    80%{
+      transform: rotateY(90deg) skewX(45deg);
+        transform-origin: 10% 10%;
+    }
+}
