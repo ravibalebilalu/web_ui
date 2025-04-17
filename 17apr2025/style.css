@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #122271 ;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    position: relative;
+}
+
+ 
+input[type="email"] {
+    background-color: transparent;
+    border: 1px solid #808080;
+    outline: none;
+    color: #fff;
+    border-radius: 50px;
+    padding: 23px;
+  font-size:20px;
+  transition: border .5s;
+  position: relative;
+  z-index: 99;
+}
+
+.emlab{
+  
+    color: #808080;
+    position: absolute;
+    left: 75px;
+    top: 183px;
+     transition: transform .5s,top .5s;
+    z-index: 100;
+    background-color:  #212121;
+    padding: 6px;
+   
+}
+
+input:focus {
+    border:1px solid #FFF;
+}
+
+ .mainbox:has(input:focus ) .emlab{
+    top: 148px;
+    
+    transform: scale(.8);
+   z-index: 101;
+    color: #FFF;
+ }
