@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #0c364d;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    position: relative;
+}
+.card{
+    position: relative;
+}
+.container1{
+    height: 200px;
+    width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+   
+    border: 10px solid #777;
+    transition: border .5s;
+}
+.container2{
+
+    height: 210px;
+    width: 310px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+      
+    flex-direction: column;
+ align-items:start;
+    position: absolute;
+     transform: rotateX(90deg);
+    
+     transition: transform .5s;
+      
+}
+  h1{
+    font-size:25px;
+    padding:10px 15px;
+    margin-top:20px;
+  }
+p{
+    padding:15px 17px;
+    font-size: 15px;
+  line-height:23px;
+  color:#777;
+  margin-bottom:20px;
+}
+.picture{
+    height: 40px;
+    width: 43px;
+    background-color: transparent;
+    border:5px solid #333;
+  border-radius:5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 1s;
+
+}
+
+ 
+  .triangle{
+    height: 35px;
+    width: 45px;
+    background-color: #333;
+    clip-path: polygon(55% 43%, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom: -1px;
+    left: -3px;
+}
+
+.sun{
+    height: 8px;
+    width: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+ .card:hover .container1 {
+    border:5px solid #f2f2f2;
+}
+ .card:hover .picture{
+    transform: scale(.6);
+}
+  .card:hover .container2{
+     transform: rotate(0deg) ;
+     transform-style: preserve-3d;
+         
+ }
