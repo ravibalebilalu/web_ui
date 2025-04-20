@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #182853;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    position: relative;
+}
+label{
+    position: absolute;
+    top: 190px;
+    left: 60px;
+    color: #AAA;
+  font-size:18px;
+  transition: top .3s,left .3s ,color .3s;
+}
+ input[type=email]{
+   width:75%;
+     outline: none;
+   padding:8px 5px ;
+   border-radius:6px;
+ }
+.roller{
+    position: absolute;
+    top: 220px;
+}
+.circle{
+    height: 20px;
+    width: 0px;
+    border-radius: 50%;
+    background-color:#4a90e2;
+    position: relative;
+    top: -6px;
+    transition: width .2s;
+}
+.c1{
+
+    left: 8px;
+}
+.c2{
+    left: -8px;
+}
+.line{
+    height: 3px;
+    width: 0px ;
+    background-color: #4a90e2;
+    position: relative;
+    top: -12px;
+    transition: width .5s;
+}
+
+ .mainbox:has(#email:focus) label{
+     top: 150px;
+     left: 80px;
+     color: #4a90e2;
+ }
+
+ .mainbox:has(#email:focus) .line{
+    width: 290px;
+}
+.mainbox:has(#email:focus) .circle{
+    width: 20px;
+}
