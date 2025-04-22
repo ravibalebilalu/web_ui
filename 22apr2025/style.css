@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #19205c;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    position: relative;
+}
+
+.container{
+    height: 32px;
+    width: 32px;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    position: relative;
+     overflow: hidden;
+}
+.seed{
+    height: 24px;
+    width: 24px;
+   background-color: #FFF;
+    border-radius: 8px;
+    position: absolute;
+    top: -22px;
+    left: -22px;
+     transition: top .3s ,left .3s;
+}
+#toggle{
+    display: none;
+}
+#toggle:checked ~ * .seed{
+    top: 2px;
+    left: 2px;
+     transition: top .1s ,left .1s;
+}
