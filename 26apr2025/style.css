@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1f3b72;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+}
+#toggle {
+    display: none;
+}
+.toggle {
+    flex-direction: column;
+    gap: 6px;
+    align-items: start;
+    position: relative;
+}
+.bar {
+    height: 6px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all .5s;
+    bottom: 0px;
+}
+
+.b1 {
+    width: 25px;
+    margin-right: 25px;
+    position: relative;
+    transform-origin:35%;
+   
+}
+
+.b2 {
+    width: 50px;
+    
+    left: 0px;
+}
+
+.b3 {
+    width: 25px;
+    margin-left: 25px;
+}
+ 
+.mainbox:has(#toggle:checked) .b1,
+.mainbox:has(#toggle:checked) .b3 {
+    background-color: #dc143c;
+    width: 50px;
+    margin: 0px 0px;
+    
+}
+.mainbox:has(#toggle:checked) .b1 {
+    transform: rotate(45deg);
+   bottom: -10px;
+   
+}
+.mainbox:has(#toggle:checked) .b3 {
+    transform: rotate(-45deg);
+    bottom: 10px;
+   
+}
+.mainbox:has(#toggle:checked) .b2 {
+    background-color: #dc143c;
+    width: 0px;
+}
+
+
