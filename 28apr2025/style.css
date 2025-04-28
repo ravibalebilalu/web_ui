@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f45;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+}
+
+.zone{
+    color:#e74c3c;
+    font-weight:600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    z-index: 100;
+    transition: transform .5s,color .5s;
+}
+
+.container1,.box{
+    height: 130px;
+    width: 230px;
+    background-color: transparent;
+     justify-content: start;
+    clip-path: polygon(80% 20%, 100% 50%, 80% 80%, 20% 80%, 0% 50%, 20% 20%);
+  position:absolute;
+  z-index: 99;
+ 
+   transition: background-color .5s;
+}
+.box{
+    background-color: transparent;
+    z-index: 101;
+}
+.container2{
+    height: 130px;
+    width: 0px;
+    background-color:transparent;
+    clip-path: polygon(80% 25%, 100% 50%, 80% 80%, 20% 80%, 0% 50%, 20% 25%);
+    position: absolute;
+    z-index: 98;
+    transition: width .5s ;
+}
+
+.mainbox:has(.box:hover) .zone{
+   color: #FFF;
+   transform: rotate(-3deg);
+}
+
+.mainbox:has(.box:hover) .container1{
+   
+    background-color: #e74c3c;
+}
+
+.mainbox:has(.box:hover) .container2{
+width: 230px;
+background-color:  #c0392b;
+
+}
+ 
