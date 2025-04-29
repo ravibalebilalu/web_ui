@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:  #151767;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color:  #212121;
+    position: relative;
+}
+
+.box{
+border-radius: 50px;
+border: 1px solid #3333a8;
+ 
+}
+
+#toggle{
+    display: none;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #5B5BF0;
+    margin: 5px;
+     position: relative;
+    transition: transform .5s;
+     overflow: hidden;
+}
+
+.arrow{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: bold;
+   transform:scaleY(.8) scaleX(1.5);
+   position: absolute;
+   z-index: 100;
+}
+.down,.open{
+    color: #FFF;
+    margin: 0px 10px;
+  font-size:17px;
+  transition: margin .5s;
+}
+.open{
+    visibility: hidden;
+}
+.rect{
+    height: 20px;
+    width: 20px;
+    background-color: #FFF;
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+}
+
+.screen{
+    height: 50px ;
+    width: 50px;
+    background-color: #3333a8;
+     position: absolute;
+     top: -50px;
+     z-index: 99;
+     
+}
+
+
+.spin{
+ 
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:transparent;
+ position: absolute;
+  visibility: hidden;
+  display: flex;
+ justify-content: start;
+ align-items: start;
+ transform: rotateZ(40deg);
+
+}
+.ball{
+    height: 5px;
+    width: 5px;
+    background-color: #FFF;
+    border-radius: 50%;
+  
+
+}
+
+
+  
+ 
+
+ .mainbox:has(#toggle:checked) .down{
+       width: 0px;
+       opacity: 0;
+       margin: 0px;
+ }
+ .mainbox:has(#toggle:checked) .circle{
+     transform: rotate(180deg);
+ }
+ .mainbox:has(#toggle:checked) .arrow{
+    opacity: 0;
+ }
+ .mainbox:has(#toggle:checked) .rect{
+    opacity: 1;
+ }
+ .mainbox:has(#toggle:checked) .screen{
+     top: 0px;
+     transition: top 2s linear .5s;
+ }
+ .mainbox:has(#toggle:checked) .spin{
+        
+       visibility: visible;
+      transform: rotate(400deg);
+      transition: transform 2s linear .5s;
+       
+}
+
+ 
