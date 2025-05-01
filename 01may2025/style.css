@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3967;
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+}
+
+span {
+    color: #aaa;
+}
+.sp2 {
+    border-bottom: 1px solid #750292;
+}
+.message {
+    position: relative;
+    top: 50px;
+    left: -90px;
+    opacity: 0;
+    transition: opacity 0.2s, top 0.3s;
+}
+.hello {
+    color: #fff;
+    background-color: #750292;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+}
+.triangle {
+    height: 20px;
+    width: 20px;
+    background-color: #750292;
+    position: absolute;
+    top: 17px;
+
+    clip-path: polygon(52% 56%, 0 0, 100% 0);
+}
+.mask {
+    height: 25px;
+    width: 130px;
+    background-color: transparent;
+
+    position: absolute;
+    left: 190px;
+}
+.mainbox:has(.mask:hover) .sp2 {
+    color: #cda8d6;
+}
+
+.mainbox:has(.mask:hover) .message {
+    opacity: 1;
+    top: -30px;
+}
