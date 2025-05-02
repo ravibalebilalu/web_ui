@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #28325d;
+}
+
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.twitter,
+.facebook,
+.instagram {
+    height: 50px;
+    width: 260px;
+    border-radius: 10px;
+    color: #fff;
+    justify-content: space-around;
+    transition: filter .5s,transform .5s;
+}
+img{
+    margin-left: -20px;
+}
+.twitter .name{
+    margin-left: -70px;
+}
+.name{
+    margin-left: -40px;
+}
+.twitter {
+    background-color: #000;
+}
+.facebook {
+    background-color: #3377ff;
+}
+.instagram {
+    background-color: #ff3355;
+}
+.followers {
+    font-weight: 900;
+}
+.facebook .symbol {
+    height: 25px;
+    width: 25px;
+    color: #3377ff;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.facebook .symbol p {
+    margin-top: 18px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+.outer {
+    height: 30px;
+    width: 30px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+.inner {
+    height: 15px;
+    width: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.dot {
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 12px;
+}
+.twitter:hover,
+.facebook:hover,
+.instagram:hover {
+    transform: scale(1.1);
+}
+
+.mainbox:has(.twitter:hover) .facebook,
+.mainbox:has(.twitter:hover) .instagram {
+    filter: blur(10px);
+}
+
+.mainbox:has(.facebook:hover) .twitter,
+.mainbox:has(.facebook:hover) .instagram {
+    filter: blur(10px);
+}
+
+.mainbox:has(.instagram:hover) .twitter,
+.mainbox:has(.instagram:hover) .facebook {
+    filter: blur(10px);
+}
