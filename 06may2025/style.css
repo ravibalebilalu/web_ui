@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #162b72;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+    gap: 10px;
+}
+
+.box{
+    height: 30px;
+    width: 20px;
+    background-color: #e67e22;
+    border-radius: 5px;
+    transform: rotateY(0deg);
+   
+    transition-delay: 2s;
+    animation: rotbox 1s linear infinite ;
+}
+
+
+ 
+ 
+@keyframes rotbox{
+
+    0%{transform: rotateY(180deg);}
+   
+    75%{transform: rotateY(0deg);}
+}
+
+.box:nth-child(1) { animation-delay: 0s; }
+.box:nth-child(2) { animation-delay: 0.2s; }
+.box:nth-child(3) { animation-delay: 0.4s; }
+.box:nth-child(4) { animation-delay: 0.6s; }
