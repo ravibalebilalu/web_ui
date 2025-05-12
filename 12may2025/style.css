@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(36, 36, 97);
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox{
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+}
+
+.container{
+      height: 70px;
+     width: 170px;
+     background-color: #FFF;
+     border-radius: 20px;
+     gap: 20px;
+}
+#blue,#green,#purple{
+    display: none;
+}
+.box{
+    height: 27px;
+    width: 27px;
+    opacity: .5;
+    border-radius: 5px;
+}
+
+.blue{
+    border: 1px solid #3b82f6;
+}
+.green{
+    border: 1px solid #10b981;
+}
+.purple{
+    border: 1px solid #8b5cf6;
+}
+
+.ok{
+    height: 8px;
+    width: 15px;
+    border-left: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    transform: rotate(-50deg) skew(-5deg) scale(.1);
+      margin-bottom: 5px;
+    transition: transform .5s;
+    opacity: .5;
+    
+}
+
+
+ .mainbox:has(#blue:checked) .blue{
+    background-color: #3b82f6;
+    opacity: 1;
+}
+
+ .mainbox:has(#green:checked) .green{
+    background-color: #10b981;
+    opacity: 1;
+}
+
+ .mainbox:has(#purple:checked) .purple{
+    background-color: #8b5cf6;
+    opacity: 1;
+}
+
+
+ .mainbox:has(#blue:checked) .blue .ok{
+  
+  transform: rotate(-50deg) skew(-5deg) scale(1);
+}
+
+
+ .mainbox:has(#green:checked) .green .ok{
+  
+  transform: rotate(-50deg) skew(-5deg) scale(1);
+}
+
+
+ .mainbox:has(#purple:checked) .purple .ok{
+  
+  transform: rotate(-50deg) skew(-5deg) scale(1);
+}
+
+.blue:hover,.green:hover,.purple:hover{
+    transform: scale(1.1);
+}
+
+.blue:hover,.green:hover,.purple:hover .ok{
+      transform: scale(1.2);
+}
