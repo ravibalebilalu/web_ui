@@ -1,0 +1,74 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #08274d;
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+}
+.container {
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+#one,
+#two,
+#three,
+#four {
+    display: none;
+}
+label,
+.slider {
+    height: 40px;
+    width: 80px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.slider {
+    height: 40px;
+    width: 80px;
+    background-color: #0b75df;
+    position: absolute;
+    left: 0px;
+    border: 1px solid #fff;
+    transition: left 0.2s;
+}
+.container:has(#one:checked) .slider {
+    left: 0px;
+    border-radius: 50px 0px 0px 50px;
+}
+.container:has(#two:checked) .slider {
+    left: 80px;
+}
+.container:has(#three:checked) .slider {
+    left: 160px;
+}
+.container:has(#four:checked) .slider {
+    left: 240px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.container:has(#one:checked) .one,
+.container:has(#two:checked) .two,
+.container:has(#three:checked) .three,
+.container:has(#four:checked) .four {
+    z-index: 100;
+    background-color: transparent;
+    color: #fff;
+}
