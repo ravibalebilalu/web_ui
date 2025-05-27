@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(28, 28, 48);
+}
+
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#toggle {
+    display: none;
+}
+.box {
+    width: 80px;
+    height: 100px;
+
+    flex-direction: column;
+
+    position: relative;
+}
+
+.bar {
+    height: 10px;
+    width: 75px;
+    background-color: #a9a9a9;
+    border-radius: 3px;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+
+.b1 {
+    top: 30%;
+}
+.b2 {
+    top: 50%;
+}
+.b3 {
+    top: 70%;
+}
+
+.mainbox:has(#toggle:checked) .b1 {
+    margin-left: -25px;
+    transform: rotate(-45deg);
+    right: 20px;
+}
+.mainbox:has(#toggle:checked) .b2 {
+    margin-right: -25px;
+}
+.mainbox:has(#toggle:checked) .b3 {
+    margin-left: -25px;
+    transform: rotate(45deg);
+    right: 20px;
+}
+.mainbox:has(.box:hover) .b1 {
+    width: 40px;
+    margin-left: 25px;
+    transform: rotate(45deg);
+    left: 20px;
+    top: 38%;
+}
+
+.mainbox:has(.box:hover) .b2 {
+    width: 50px;
+    margin-right: 25px;
+}
+
+.mainbox:has(.box:hover) .b3 {
+    width: 40px;
+    margin-left: 25px;
+    transform: rotate(-45deg);
+    left: 20px;
+    top: 62%;
+}
