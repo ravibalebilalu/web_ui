@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(35, 35, 55);
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox {
+    height: 400px;
+    width: 400px;
+    background-color: #212121;
+    position: relative;
+}
+
+.card {
+    height: 200px;
+    width: 135px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: -3px 3px 5px #ebebeb;
+    align-items: start;
+    position: absolute;
+    transform-origin: bottom left;
+    transition: transform 0.2s, height 0.2s, width 0.2s;
+}
+
+.image {
+    height: 160px;
+    width: 120px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: height 0.2s, width 0.2s;
+}
+
+.mainbox:hover .c1 {
+    transform: rotate(-55deg);
+}
+.mainbox:hover .c2 {
+    transform: rotate(-36deg);
+}
+.mainbox:hover .c3 {
+    transform: rotate(-18deg);
+}
+.mainbox:hover .c4 {
+    transform: rotate(0deg);
+}
+.mainbox:hover .c5 {
+    transform: rotate(18deg);
+}
+.mainbox:hover .c6 {
+    transform: rotate(36deg);
+}
+.mainbox:hover .c7 {
+    transform: rotate(55deg);
+}
+
+.card:hover {
+    height: 210px;
+    width: 145px;
+}
+.card:hover .image {
+    height: 170px;
+    width: 130px;
+}
