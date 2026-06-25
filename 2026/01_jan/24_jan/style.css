@@ -1,0 +1,86 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+  body {
+      height: 100vh;
+      width: 100vw;
+      background-color: #212121;
+      place-items: center;
+      place-content: center;
+  }
+
+  .mainbox {
+      height: 475px;
+      width: 475px;
+
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+      gap: 16px;
+
+  }
+
+  .box {
+      background-color: #f8fafc;
+      width: 78%;
+      height: 78%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border-radius: 10px;
+      border: 2px solid #2563eb;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      top: 3px;
+      transition: top .3s, background-color .3s;
+  }
+
+  .box:nth-child(1) {
+      place-self: end;
+  }
+
+  .box:nth-child(2) {
+      place-self: end start;
+  }
+
+  .box:nth-child(3) {
+      place-self: start end;
+  }
+
+  p,
+  h2 {
+      color: #2563eb;
+      text-align: center;
+      transition: color .5s;
+  }
+
+  h2 {
+      font-size: 19px;
+  }
+
+  p {
+      font-size: 13px;
+      width: 80%;
+  }
+
+  .box:hover p {
+      color: #f8fafc;
+
+  }
+
+  .box:hover h2 {
+      color: #f8fafc;
+
+  }
+
+  .box:hover {
+      background-color: #2563eb;
+
+      top: 0px;
+  }

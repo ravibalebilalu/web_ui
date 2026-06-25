@@ -1,0 +1,54 @@
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+
+   body {
+       height: 100vh;
+       width: 100vw;
+       background-color: #212121;
+       place-items: center;
+       place-content: center;
+   }
+
+   .mainbox {
+       height: 475px;
+       width: 475px;
+       border: 1px solid green;
+       position: relative;
+       overflow: hidden;
+       display: grid;
+       grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+   }
+
+   .base {
+       grid-area: 12/4/13/10;
+       background-color: #4ecdc4;
+       height: 10%;
+       align-self: center;
+
+   }
+
+   .path {
+       grid-area: 4/6/12/8;
+
+       display: flex;
+       justify-content: center;
+   }
+
+   .ball {
+       height: 60px;
+       width: 60px;
+       border-radius: 50%;
+       background-color: #4ecdc4;
+       animation: ball-anim 1.37s ease-in-out infinite;
+   }
+
+   @keyframes ball-anim {
+       50% {
+           margin-top: 260px;
+           background-color: #ff6b6b;
+       }
+   }
