@@ -1,0 +1,82 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+  body {
+      height: 100vh;
+      width: 100vw;
+      background-color: #212121;
+      place-items: center;
+      place-content: center;
+  }
+
+  .mainbox {
+      height: 475px;
+      width: 475px;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+  }
+
+  .p1 {
+      grid-area: 2/4/3/10;
+      place-self: center;
+      color: #2563eb;
+      font-size: 30px;
+      font-weight: bold;
+      opacity: .1
+  }
+
+  .name,
+  .mail,
+  #message {
+      width: 95%;
+      padding: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      place-self: center;
+      color: #1e293b;
+      border: 2px solid #2563eb;
+      transition: border .3s;
+  }
+
+  .name {
+      grid-area: 4/2/5/12;
+  }
+
+  .mail {
+      grid-area: 6/2/7/12;
+  }
+
+  #message {
+      grid-area: 8/2/10/12;
+  }
+
+  button {
+      grid-area: 10/2/12/12;
+      width: 95%;
+      height: 60%;
+      place-self: center;
+      background-color: #2563eb;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      transition: background-color .5s;
+  }
+
+  .name:hover,
+  .mail:hover,
+  #message:hover,
+  .name:focus,
+  .mail:focus,
+  #message:focus {
+      border: 2px solid #1e293b;
+  }
+
+  button:hover {
+      background-color: #1e293b;
+  }
