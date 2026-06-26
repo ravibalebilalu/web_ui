@@ -1,0 +1,85 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background: #212121;
+
+    color: #fff;
+    display: grid;
+    place-items: center;
+  }
+
+  .mainbox {
+    height: 500px;
+    width: 500px;
+
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(12, 1fr)/repeat(12, 1fr);
+
+
+
+  }
+
+  .container {
+    grid-area: 1/3/12/11;
+    display: grid;
+    grid-template: repeat(6, 1fr)/1fr;
+    gap: 10px;
+  }
+
+  .box {
+    background-color: #e0e7ff;
+    color: #2563eb;
+    place-self: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    width: 95%;
+    height: 100%;
+    margin-left: 0px;
+    transition: margin-left .2s;
+  }
+
+  .title {
+    background-color: transparent;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .mask {
+    grid-area: 1/5/2/9;
+    background-color: #212121;
+    height: 80%;
+  }
+
+  .id-box {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: #e0e7ff;
+    display: grid;
+    place-items: center;
+  }
+
+  .box:hover {
+    margin-left: 20px;
+  }
+
+  .box:nth-child(1):hover {
+    margin-left: 0px;
+  }
