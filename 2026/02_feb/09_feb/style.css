@@ -1,0 +1,71 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+
+    place-items: center;
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+
+    place-items: center;
+
+  }
+
+  .circle {
+
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    animation: cir-anim 2s linear infinite;
+  }
+
+  .ball {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+  }
+
+  .b1 {
+    grid-area: 1/2/2/3;
+    place-self: end center;
+    background-color: #1e40af;
+  }
+
+  .b2 {
+    grid-area: 3/1/4/2;
+    place-self: start end;
+
+  }
+
+  .b3 {
+    grid-area: 3/3/4/4;
+    place-self: start;
+
+  }
+
+  @keyframes cir-anim {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
