@@ -1,0 +1,45 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #212121;
+
+    place-items: center;
+    place-content: center;
+  }
+
+  .mainbox {
+    height: 475px;
+    width: 475px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+
+    place-items: center;
+
+  }
+
+  .container {
+    background-color: #e0e5ec;
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    color: #2c3e50;
+    display: grid;
+    place-items: center;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    box-shadow: 10px 10px 30px #b8bdc5, -10px -10px 30px #ffffff;
+    transition: box-shadow .3s;
+  }
+
+  .container:hover {
+    box-shadow: 8px 8px 15px #b8bdc5, -8px -8px 20px #ffffff;
+  }
