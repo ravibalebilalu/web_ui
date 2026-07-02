@@ -1,0 +1,138 @@
+           * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+
+ body {
+   height: 100vh;
+   width: 100vw;
+   background-color: #212121;
+
+   place-items: center;
+   place-content: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .mainbox {
+   height: 475px;
+   width: 475px;
+   position: relative;
+   overflow: hidden;
+   display: grid;
+   grid-template-rows: 150px 50px 30px 45px 65px 30px 100px;
+   place-items: center;
+
+ }
+
+ .sk {
+   background-color: #34d399;
+   color: #dcfce7;
+   border-radius: 50%;
+   height: 100px;
+   width: 100px;
+   display: grid;
+   place-items: center;
+   border: 3px solid #dcfce7;
+   font-size: 50px;
+   font-weight: bold;
+   align-self: end;
+ }
+
+
+ .sara {
+   color: #dcfce7;
+   font-size: 25px;
+   font-weight: 700;
+   align-self: end;
+ }
+
+ .mail {
+   color: #34d399;
+   align-self: center;
+ }
+
+ .role {
+   color: #dcfce7;
+   width: 50%;
+   text-align: center;
+
+
+ }
+
+ .numbers,
+ .attributes {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   place-items: center;
+   
+
+ }
+
+ .numbers {
+   align-items: end;
+   column-gap: 70px;
+   align-self:end;
+   column-gap: 70px;
+ }
+
+
+ .attributes {
+  align-self: start;
+   column-gap: 60px;
+ }
+
+ .numbers p {
+   color: #34d399;
+   font-size: 23px;
+   font-weight: bold;
+   margin: none;
+   padding: none;
+
+ }
+
+
+ .attributes p {
+   color: #dcfce7;
+   font-size: 13px;
+   align-self: start;
+   margin: none;
+   padding: none;
+ }
+
+ .buttons {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   align-self:center;
+ }
+
+ .buttons div {
+   color: #dcfce7;
+    
+  
+ }
+.follow,.msg{
+  height: 45px;
+  width: 170px;
+  border: 2px solid #34d399;
+  border-radius: 10px ;
+  display: grid;
+  place-items: center start;
+  padding-left:20px;
+}
+.follow{
+   background-color: #34d399;
+   transition:border-radius .3s ;
+}
+.follow:hover{
+  border-radius: 0px;
+}
+ .msg {
+   background-color: transparent;
+   transition: background-color .3s;
+ }
+ .msg:hover{
+  background-color: #34d399;
+ }
